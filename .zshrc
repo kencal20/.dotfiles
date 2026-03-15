@@ -1,0 +1,1 @@
+/home/kencal20/.zshrc
