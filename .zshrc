@@ -101,14 +101,11 @@ export NVM_DIR="$HOME/.nvm"
 # Custom aliases
 alias read_doc='man zshbuiltins | grep "read"'
 alias suspend='systemctl suspend'
-alias hibernate='sudo systemctl hibernate'
+alias hibernate=' sudo systemctl hibernate'
 alias update='sudo apt update && sudo apt upgrade -y'
 alias install='sudo apt install'
 alias remove='sudo apt remove'
 alias clean='sudo apt autoremove && sudo apt autoclean'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
 alias btm="bottom"
 alias adown='aria2c -s16 -x16 -c'
 
@@ -121,6 +118,8 @@ if [[ -o interactive ]]; then
     fi
     echo ""
 fi
+
+
 
 # direnv
 if command -v direnv >/dev/null 2>&1; then
